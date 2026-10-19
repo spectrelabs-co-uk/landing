@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpectreLabs</title>
+  <meta name="description" content="SpectreLabs is working on something new. More soon." />
+  <meta name="theme-color" content="#fafaf9" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+</head>
+<body class="flex min-h-full flex-col bg-stone-50 font-sans text-stone-900 antialiased">
+
+  <div class="mx-auto flex w-full max-w-2xl flex-1 flex-col px-6">
+
+    <header class="py-8">
+      <a href="/" class="text-sm font-semibold tracking-tight">SpectreLabs</a>
+    </header>
+
+    <main class="flex flex-1 flex-col justify-center py-16">
+      <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">We're building something new.</h1>
+
+      <p class="mt-4 text-base leading-relaxed text-stone-600 sm:text-lg">
+        We're not ready to share the details yet. We'll let you know when it's ready.
+      </p>
+    </main>
+
+    <footer class="border-t border-stone-200 py-8 text-sm text-stone-500">
+      <p>&copy; <span id="year">2026</span> SpectreLabs</p>
+    </footer>
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<style type="text/tailwindcss">
+  @theme {
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+</style>
